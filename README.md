@@ -9,6 +9,7 @@ SQLQueryHub is a repository containing a wide range of SQL queries, covering var
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Feedback and Support](#feedback-support)
 
 ## Introduction
 
