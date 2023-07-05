@@ -18,14 +18,14 @@ SQLQueryHub is a curated collection of SQL queries designed to help users improv
 
 The queries in SQLQueryHub cover the following topics:
 
+- Introduction to SQL
 - Beginner-level queries
-- Joins and subqueries
-- Basic operations (SELECT, INSERT, UPDATE, DELETE)
-- Aggregate functions (COUNT, SUM, AVG, MIN, MAX)
+- Filtering and retrieving data
+- Basic operations
 - Working with date and string data
 - Group by and having clause
-- Filtering and retrieving data
-- Introduction to SQL
+- Aggregate functions (COUNT, SUM, AVG, MIN, MAX)
+- Joins and subqueries
 - Joins and set operators
 - Constraints (primary key, foreign key, unique, etc.)
 - DDL operations (CREATE, ALTER, DROP)
