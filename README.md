@@ -2,7 +2,7 @@
 SQLQueryHub is a repository containing a collection of SQL queries, categorized based on different topics and skill levels. Whether you are a beginner learning SQL or an experienced user looking for advanced query examples, this repository has something for you.
 
 # Table of Contents
-[Introduction to SQL]()
+[Introduction to SQL](#sax)
 Basic Operations
 Joins and Set Operators
 Subqueries
