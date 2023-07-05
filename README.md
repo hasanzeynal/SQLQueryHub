@@ -2,7 +2,7 @@
 
 SQLQueryHub is a repository containing a wide range of SQL queries, covering various topics and skill levels. Whether you are a beginner looking to learn SQL or an experienced user seeking advanced queries, this repository has something for you.
 
-## Table of Contents
+# Table of Contents
 
 - [Introduction](#introduction)
 - [Topics Covered](#topics-covered)
@@ -11,11 +11,11 @@ SQLQueryHub is a repository containing a wide range of SQL queries, covering var
 - [License](#license)
 - [Feedback and Support](#feedback-support)
 
-## Introduction
+# Introduction
 
 SQLQueryHub is a curated collection of SQL queries designed to help users improve their SQL skills. It contains queries covering essential SQL operations, joins, subqueries, basic and advanced functions, data manipulation, and more. With this repository, you can explore different SQL concepts and find examples to practice and learn from.
 
-## Topics Covered
+# Topics Covered
 
 The queries in SQLQueryHub cover the following topics:
 
@@ -34,13 +34,13 @@ The queries in SQLQueryHub cover the following topics:
 - DML statements with subqueries
 - Analytic functions
 
-## Usage
+# Usage
 
 Feel free to explore the queries in this repository to enhance your SQL knowledge and skills. The queries are organized into folders based on their respective topics. Simply navigate to the relevant folder and access the SQL files containing the queries. Each file includes comments and explanations to guide you through the query logic.
 
 You can use these queries for learning, reference, or even in your own projects. Modify and adapt them to suit your specific requirements.
 
-## Contributing
+# Contributing
 
 Contributions to SQLQueryHub are welcome! If you have SQL queries or examples that you would like to contribute, please follow these steps:
 
