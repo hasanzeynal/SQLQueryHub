@@ -51,7 +51,7 @@ Contributions to SQLQueryHub are welcome! If you have SQL queries or examples th
 
 Your contributions will help expand the repository and make it even more valuable to the SQL community.
 
-## License
+# Feedback and Support
+If you have any suggestions, feedback, or need support related to SQLQueryHub, please open an issue in the repository. We'll be happy to assist you!
 
-This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the queries in this repository for personal and commercial purposes.
-
+Feel free to customize the README file further to meet your specific requirements. Add instructions, additional resources, or any other relevant information to enhance the usability of the repository.
