@@ -1,0 +1,81 @@
+--Display department name, manager name, and salary of the manager for all managers whose
+-- experience is more than 5 years.
+
+select 
+   *
+from hr.employees E
+	inner join hr.departments D
+	on E.employee_id = D.department_id 
+    full join hr.JOB_HISTORY J
+    on J.employee_id = E.employee_id
+    where extract(year from end_date) - extract(year from start_date) < 5;
+
+
+-- Display employee name, job title for the jobs, employee did in the past where the job was
+-- done less than six months.
+
+select 
+     FIRST_NAME,
+     JOB_TITLE,
+     end_date,
+     start_date,
+    (end_date - start_date) / 365 as Year_diff
+from hr.employees E
+    left join hr.jobs J
+    on E.JOB_ID = J.JOB_ID
+    inner join hr.JOB_HISTORY Job
+    on Job.JOB_ID = E.JOB_ID
+    where (end_date - start_date) / 365 <= 0.5;
+
+
+-- Display department name, average salary and number of employees with commission within the department.
+
+select 
+    department_name,
+    avg(salary) as Average_Salary,
+    count(employee_id) as Number_of_Employees
+from hr.employees E
+    left join hr.departments D
+    on E.DEPARTMENT_ID = D.DEPARTMENT_ID
+    where COMMISSION_PCT is not null
+    group by department_name;
+
+
+
+-- 6. Display employee name and country in which he is working.
+
+select 
+    *
+    from hr.employees E
+left join hr.DEPARTMENTS D
+	on E.DEPARTMENT_ID = D.DEPARTMENT_ID
+left join hr.LOCATIONS L
+    on L.LOCATION_ID = D.LOCATION_ID
+left join hr.COUNTRIES C
+    on C.COUNTRY_ID = L.COUNTRY_ID;
+
+
+--Display minimum and maximum “hire_date” of employees work in IT and HR departments.
+
+select 
+    DEPARTMENT_NAME,
+    min(hire_date) as Max_Hire,
+    max(hire_date) as Min_Hire
+    from hr.employees E
+left join hr.DEPARTMENTS D
+    on D.DEPARTMENT_ID = E.DEPARTMENT_ID
+where DEPARTMENT_NAME in ('HR', 'IT')
+    group by DEPARTMENT_NAME;
+
+
+-- Find difference between current date and hire dates of employees after sorting them by hire
+-- date, then show difference in days, months and years.
+
+select 
+    hire_date,
+    round(sysdate - hire_date,0) as Day_DIFF,
+    round((sysdate - hire_date)/ 30,0) as Month_DIFF,
+    extract(year from sysdate) - extract(year from hire_date) as Year_DIFF
+from hr.employees
+    order by hire_date desc;
+
